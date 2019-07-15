@@ -11,6 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 
 </head>
@@ -107,15 +108,13 @@
     function expandNav() {
       var nav = document.getElementById('Nav');
       if (nav.className === 'navigation') {
-        nav.className = 'responsive';
+        nav.className += ' responsive';
       } else {
         nav.className = 'navigation';
       }
     }
 
-    function sizeChange() {
-      
-    }
+    
 
   </script>
 </body>

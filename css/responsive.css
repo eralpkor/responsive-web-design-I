@@ -1,0 +1,49 @@
+
+
+@media screen and (max-width: 500px) {
+  .navigation.responsive {position: relative;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+  
+  .navigation .noShow img{
+    float: left;
+  }
+
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: azure;
+  }
+
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navigation a.logo {
+    float: left;
+  }
+  .logo {
+    width: 60%;
+    height: auto;
+  }
+
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    height: 300px;
+  }
+  
+  .responsive a i {
+    display: none;
+  }
+}

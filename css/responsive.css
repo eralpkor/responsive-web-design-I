@@ -1,7 +1,9 @@
 
 
 @media screen and (max-width: 500px) {
-  .navigation.responsive {position: relative;}
+  
+  .navigation a:not(:first-child) {display: none;}
+
   .navigation a.icon {
     float: right;
     display: block;
@@ -9,6 +11,24 @@
   
   .navigation .noShow img{
     float: left;
+    width: 100px;
+  }
+
+  .navigation {
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: azure;
+  }
+  .navigation.responsive {position: relative;}
+
+  .navigation.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
   }
 
   .navigation.responsive a {
@@ -16,18 +36,7 @@
     display: block;
     text-align: left;
   }
-}
-@media screen and (max-width: 500px) {
-  body {
-    background-color: azure;
-  }
-
-  .navigation a:not(:first-child) {display: none;}
-  .navigation a.icon {
-    float: right;
-    display: block;
-  }
-
+ 
   .navigation a.logo {
     float: left;
   }
@@ -36,14 +45,22 @@
     height: auto;
   }
 
-  .responsive {
+  .navigation.responsive .show {
+    display: none;
+  }
+
+  nav.navigation {
+    display: block;
+  }
+
+  /* .responsive {
     display: flex;
     flex-direction: column;
     align-content: space-around;
     height: 300px;
   }
-  
-  .responsive a i {
+   */
+  /* .responsive a i {
     display: none;
-  }
+  } */
 }

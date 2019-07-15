@@ -184,6 +184,41 @@ footer {
   margin: 5% 0 10% 0;
   padding: 5%;
 }
+
+/* Services Page */
+.products {
+  display: flex;
+  margin: 5% 0;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 4% 0;
+}
+
+.container-2 > .main-6 {
+  flex-grow: 1;
+  flex: 1 1 45%;
+}
+
+.main-6 {
+  border: 1px solid black;
+  padding: 2%;
+  margin: 2%;
+}
+
+
+.bottom {
+  /* height: 500px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
   /* Media query mobile design */
 
   /* Tablets */
@@ -219,7 +254,10 @@ footer {
 
   address {
     margin: 5% 0 5% 5%;
-
+  }
+  /* Services page */
+  .products {
+    width: 95%;
   }
 }
 

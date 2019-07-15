@@ -72,6 +72,9 @@ a:hover {
   color: crimson;
   transition: 0.5s;
 }
+a:active {
+  color: gray;
+}
 
 a {
   text-decoration: none;
@@ -278,6 +281,8 @@ footer {
   body {
     background-color: azure;
   }
+
+  .navigation a:not(:first-child) {display: none;}
 
   .navigation {
     flex-direction: column;

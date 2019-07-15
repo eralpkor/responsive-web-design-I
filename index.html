@@ -11,6 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 
 </head>
 
@@ -20,7 +21,7 @@
   <div class="container">
     <nav class="navigation" id="Nav">
       <a class="noShow" href="./index.html"><img class="logo" src="img/logo.png" alt="Great Idea! Company logo."></a>
-      <a href="./index.html" class="active">Home</a>
+      <!-- <a href="./index.html" class="active">Home</a> -->
       <a href="./services.html">Services</a>
       <a href="#">Product</a>
       <a href="./vision.html">Vision</a>
@@ -28,6 +29,9 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a class="show" href="./index.html"><img class="logo" src="img/logo.png" alt="Great Idea! Company logo."></a>
+      <a href="javascript:void(0);" class="icon" onclick="expandNav()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
 
 
@@ -98,6 +102,22 @@
 
     <footer>Copyright Great Idea! 2018</footer>
   </div>
+
+  <script type="text/javascript">
+    function expandNav() {
+      var nav = document.getElementById('Nav');
+      if (nav.className === 'navigation') {
+        nav.className = 'responsive';
+      } else {
+        nav.className = 'navigation';
+      }
+    }
+
+    function sizeChange() {
+      
+    }
+
+  </script>
 </body>
 
 </html>

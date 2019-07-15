@@ -274,21 +274,33 @@ footer {
     height: auto;
   }
 }
-
+.navigation a i {
+  display: none;
+}
 
   /* Small devices */
+@media screen and (max-width: 500px) {
+  .navigation.responsive {position: relative;}
+  .navigation a i {
+    display: inline;
+  }
+  
+}
 @media screen and (max-width: 500px) {
   body {
     background-color: azure;
   }
 
   .navigation a:not(:first-child) {display: none;}
-
-  .navigation {
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+  /* .navigation {
     flex-direction: column;
     align-content: space-around;
     height: 300px;
-  }
+  } */
   
   .top-section {
     flex-direction: column;

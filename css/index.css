@@ -68,12 +68,16 @@ h1, h2, h3, h4, h5 {
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+.home {
+  display: none;
+}
+
 a:hover {
   color: crimson;
   transition: 0.5s;
 }
-a:active {
-  color: gray;
+a.active {
+  color: rgb(224, 50, 50);
 }
 
 a {
@@ -223,6 +227,11 @@ footer {
 .icon {
   display: none;
 }
+
+.navigation.responsive a:nth-child(2) {
+  display: none;
+}
+
 
   /* Media query mobile design */
 

@@ -17,6 +17,10 @@
   .navigation {
     overflow: hidden;
   }
+
+  .navigation.responsive a:first-child {
+    display: none;
+  }
   
 }
 @media screen and (max-width: 500px) {
@@ -26,15 +30,16 @@
   .navigation.responsive {position: relative;}
 
   .navigation.responsive .icon {
-    position: relative;
-    right: 0;
-    top: 0;
+    position: absolute;
+    right: 15px;;
+    top: 10px;
   }
 
   .navigation.responsive a {
     float: none;
     display: block;
     text-align: left;
+    padding: 14px 16px;
   }
  
   .navigation a.logo {
@@ -53,14 +58,7 @@
     display: block;
   }
 
-  /* .responsive {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    height: 300px;
+  .navigation.responsive a:nth-child(2) {
+    display: block;
   }
-   */
-  /* .responsive a i {
-    display: none;
-  } */
 }

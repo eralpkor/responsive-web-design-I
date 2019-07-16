@@ -273,9 +273,9 @@ footer {
   .article > h1 {
     margin: 0 5% 2%;
   }
-  .article > p{
+  /* .article > p{
     margin: 0 5%;
-  }
+  } */
   .bottom .bottom-1{
     width: 95%;
     margin: 5%;
@@ -293,7 +293,18 @@ footer {
   body {
     background-color: azure;
   }
-  
+
+  .article p{
+    /* width: 95%; */
+    padding: 0 3% 0 5%;
+  }
+/*   
+  .container {
+    width: 95%;
+  } */
+  .navigation {
+    padding: 7% 5%;
+  }
   .top-section {
     flex-direction: column;
     width: 95%;
@@ -369,7 +380,7 @@ footer {
     margin-top: 2%;
   }
   .bottom-1:nth-child(2){
-    padding: 5%;
+    padding: 5% 5% 0 0;
   }
   .button {
     width: 20%;

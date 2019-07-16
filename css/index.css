@@ -287,6 +287,21 @@ footer {
 
 }
 
+@media screen and (max-width: 680px) {
+  .navigation {
+    padding: 5% 0;
+    justify-content: space-evenly;
+  }
+  .logo {
+    width: 80%;
+  }
+  a.show {
+    width: 120px;
+  }
+  .navigation a {
+    font-size: 80%;
+  }
+}
 
   /* Small devices */
 @media screen and (max-width: 500px) {
@@ -298,13 +313,11 @@ footer {
     /* width: 95%; */
     padding: 0 3% 0 5%;
   }
-/*   
-  .container {
-    width: 95%;
-  } */
+
   .navigation {
     padding: 7% 5%;
   }
+
   .top-section {
     flex-direction: column;
     width: 95%;
